@@ -2,9 +2,9 @@ This repository contains five beginner-level projects showcasing fundamental ski
 
 Projects Included:
 
-Building a Rothko.
-Building Cafe Menu.
-CSS Color Markers
-Photogallery
-Survey Form
+Building a Rothko,
+Building Cafe Menu,
+CSS Color Markers,
+Photogallery,
+Survey Form.
 Feel free to explore, and use them as references!
