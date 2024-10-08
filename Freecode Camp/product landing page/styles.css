@@ -1,0 +1,21 @@
+#nav-bar{
+    position:fixed;
+    top:0;
+    left:-15
+  }
+  @media only screen (max-width: 200px) {
+    body {
+  background-color: blue;
+    }
+  }
+  
+  .flex{
+  
+  display:flex;
+  flex-direction:column;
+  }
+  .words{
+    border: 0.5px solid gray;
+      padding: 10px;
+      background-color:rgb(209, 209, 232);
+  }
