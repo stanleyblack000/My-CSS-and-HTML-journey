@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    background-size: 200% 200%;
+    animation: gradientAnimation 8s ease infinite;
+    text-align: center;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Title Styling with Enhanced Animation */
+#text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff0066;
+    margin-bottom: 20px;
+    animation: pulseColor 2s infinite;
+}
+
+/* Pulsing Color and Scale Animation */
+@keyframes pulseColor {
+    0%, 100% {
+        transform: scale(1);
+        color: #ff0066;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #00ffea;
+    }
+}
+
+/* Input Styling */
+#number {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Button Styling with Neon Hover Effect */
+#convert-btn {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #4a00e0;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Neon Border Animation on Hover */
+#convert-btn::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff0066, #00ffea, #ff0066, #00ffea);
+    background-size: 200% 200%;
+    z-index: -1;
+    transition: opacity 0.3s;
+    opacity: 0;
+    animation: neonBorder 2s linear infinite;
+}
+
+#convert-btn:hover::before {
+    opacity: 1;
+}
+
+@keyframes neonBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/* Button Hover Effect */
+#convert-btn:hover {
+    color: #333;
+}
+
+/* Output Text Styling */
+#output {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 20px;
+}
